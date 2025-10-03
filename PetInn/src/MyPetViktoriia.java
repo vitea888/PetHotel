@@ -7,7 +7,7 @@ public class MyPetViktoriia {
             public String petName = "Buddy";
             public String ownerName = "Viktoriia";
         }
-
+//
 
     }
 }
