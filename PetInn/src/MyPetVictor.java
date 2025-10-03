@@ -1,5 +1,3 @@
-package m123;
-
 public class MyPetVictor {
     public static void main(String[] args) {
 
