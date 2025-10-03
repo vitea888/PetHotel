@@ -6,6 +6,7 @@ public class MyPetMihajlo {
         String ownerName = "Mihajlo";
         int age = 5;
         char gender = 'M';
+        char breed = 'P';
 
         System.out.println(ownerName + " checked in their pet: " + petName);
 
