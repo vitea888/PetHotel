@@ -1,4 +1,4 @@
-public class MyPetGas {
+public class MyPetSasa {
     public static void main(String[] args) {
 
         String petName = "Gas";
