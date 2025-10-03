@@ -1,7 +1,7 @@
-public class PetHotelClients {
+//public class PetHotelClients {
 
-    public static void main(String[] args) {
-        PetHotel hotel = new PetHotel();
+    //public static void main(String[] args) {
+       // PetHotel hotel = new PetHotel();
 
         //new MyPetAlice().checkIn(hotel);
         //new MyPetBob().checkIn(hotel);
@@ -9,5 +9,5 @@ public class PetHotelClients {
         //new MyPetDiana().checkIn(hotel);
         //new MyPetEve().checkIn(hotel);
         //new MyPetFrank().checkIn(hotel);
-    }
-}
+  //  }
+//}
