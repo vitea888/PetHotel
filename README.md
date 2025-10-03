@@ -9,8 +9,9 @@ Each student does the following:
 
 Clone the repo locally.
 
+Create their own branch, Example: Victors-Pet
 
-Create their own class named MyPet<PetName>
+Create their own class named MyPetOwnersName.java, PetHotel -> PetInn -> src -> Create new Class MyPetOwnersName.java,  
 Example for Alice:
 
 public class MyPetAlice {
