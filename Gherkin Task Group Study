@@ -1,0 +1,126 @@
+🎯 Lesson Goal
+
+By the end of this exercise, students will be able to:
+
+Identify what makes a good scenario.
+
+Rewrite a regular text requirement into structured Gherkin syntax.
+
+Collaborate as a QA or developer team (like in Jira BDD tickets).
+
+🧠 What is Gherkin Language?
+
+Gherkin is a simple, structured language used to describe software behavior.
+It’s used in Behavior-Driven Development (BDD) to make requirements easy to test and understand.
+
+It follows this structure:
+
+Feature: <short description>
+  Scenario: <what you’re testing>
+    Given <the starting situation>
+    When <an action occurs>
+    Then <the expected result>
+
+
+Each line starts with a keyword:
+
+Feature: describes the functionality being tested.
+
+Scenario: one example or test case for that feature.
+
+Given: the starting conditions (setup).
+
+When: the action being performed.
+
+Then: the expected outcome.
+
+👩‍🏫 Lesson Plan for 6 Students
+Step 1️⃣ – Start with Plain Text
+
+Give students regular text requirements like these:
+
+A user should be able to log in with a valid username and password.
+
+If the user enters a wrong password, an error message should appear.
+
+A logged-in user can view their profile page.
+
+Users should be able to search for hotels by city name.
+
+Users can cancel a booking from their bookings page.
+
+Staff can check pets in when they arrive at the PetHotel.
+
+Step 2️⃣ – Assign One Requirement per Student
+
+Each student takes one requirement and rewrites it in Gherkin format.
+
+Example conversion:
+
+📝 Regular text:
+
+A user should be able to log in with a valid username and password.
+
+✅ Gherkin version:
+Feature: User Login
+  Scenario: Successful login with valid credentials
+    Given the user is on the login page
+    When they enter a valid username and password
+    Then they should be redirected to their dashboard
+
+Step 3️⃣ – Group Review
+
+Each student shares their Gherkin scenario.
+The rest of the group checks:
+
+Does it include Given, When, and Then?
+
+Does it describe behavior (what happens) instead of implementation (how it happens)?
+
+Is it clear and testable?
+
+Encourage feedback like:
+
+“I think your Given could describe the page setup better.”
+“Can you make your Then step more specific about the outcome?”
+
+Step 4️⃣ – Add More Scenarios Together
+
+Ask each student to add one negative scenario (what happens when something goes wrong).
+
+Example:
+
+Scenario: Login fails with invalid password
+  Given the user is on the login page
+  When they enter a valid username but an incorrect password
+  Then an error message should appear saying "Invalid credentials"
+
+Step 5️⃣ – Enter Scenarios into Jira
+
+Once everyone has their scenarios:
+
+Create a Jira project (e.g., PetHotel BDD Training).
+
+Add each Feature as a User Story.
+
+Add the Scenario text in Gherkin format in the story’s description or “Test” issue.
+
+Assign each student as the author of one scenario.
+
+💡 Tips to Remember
+
+Keep sentences short and specific.
+
+One Scenario = one behavior to test.
+
+Avoid UI or technical details like button colors or database names.
+
+Use consistent names for users, pages, and actions.
+
+🎓 Example Group Result (after practice)
+Feature: Pet Check-In
+  Scenario: Successfully checking in a pet
+    Given the staff is logged into the PetHotel system
+    And the pet has a valid booking for today
+    When the staff marks the pet as "Checked In"
+    Then the system should update the booking status to "Active"
